@@ -23,7 +23,7 @@ public class Hooks {
     @Autowired
     Base base;
 
-    @Before
+    @Before("@ui")
     public void startUp(){
         if(env.getBrowser().equalsIgnoreCase("chrome")){
             WebDriverManager.chromedriver().setup();
@@ -36,7 +36,7 @@ public class Hooks {
             base.getDriver().manage().window().maximize();
     }
 
-    @After
+    @After("@ui")
     public void tearDown(Scenario scenario){
         if (scenario.isFailed()) {
             byte[] data =((TakesScreenshot) base.getDriver()).getScreenshotAs(OutputType.BYTES);
