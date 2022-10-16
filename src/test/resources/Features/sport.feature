@@ -1,3 +1,4 @@
+@ui
 Feature: Sports Functionality
 
   Background: Pre condition to run all the below scenarios
