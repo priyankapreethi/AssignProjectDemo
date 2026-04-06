@@ -7,6 +7,7 @@ public class SportsPage {
     Base base;
     public SportsPage(Base base){
         this.base=base;
+        System.out.println(a1 first change);
     }
     private By linkFootBallSubMenu= By.xpath("//a[text()='Football']");
     private By firstArticleInFootBall= By.xpath("(//h2[@class='linkro-darkred']//a)[2]");
