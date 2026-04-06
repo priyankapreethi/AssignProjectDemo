@@ -18,6 +18,7 @@ Base base;
     @Given("the Mail Online home page")
     public void theMailOnlineHomePage() {
         mailOnline.homePage().acceptCookies();
+        System.out.println("hello 123 git new line in sports java page");
     }
 
     @And("the Sports page")
